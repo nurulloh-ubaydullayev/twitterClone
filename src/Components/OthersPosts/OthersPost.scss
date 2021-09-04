@@ -1,0 +1,63 @@
+.others-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px 25px 20px 25px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.post {
+  width: 100%;
+}
+
+.post-avatar {
+  display: block;
+  margin-right: 15px;
+}
+
+.post-owner {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 5px;
+  font-family: "Segoe UI";
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.post-text {
+  margin-bottom: 22px;
+  font-family: "Segoe UI";
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.post-owner__account {
+  opacity: 0.6;
+}
+
+.post-owner__name {
+  margin-right: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  color: #000000;
+  opacity: 1;
+}
+
+.post__about-btn {
+  margin-right: 100px;
+  background-color: transparent;
+  border: none;
+}
+
+.posts__more-btn {
+  background-color: transparent;
+  border: none;
+}
+
+.post__img {
+  margin-top: -5px;
+  margin-bottom: 20px;
+}

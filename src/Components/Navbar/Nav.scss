@@ -1,0 +1,27 @@
+.nav {
+  padding-left: 15px;
+  margin-bottom: 30px;
+}
+
+.nav__list {
+  list-style-type: none;
+}
+
+.nav__item {
+  margin-bottom: 30px;
+}
+
+.nav__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: "Segoe UI";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.nav__link-text {
+  margin-left: 20px;
+}

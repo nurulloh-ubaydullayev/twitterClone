@@ -1,0 +1,28 @@
+.menu {
+  // position: relative;
+  width: 100%;
+  max-width: 373px;
+  // margin-left: 28px;
+  padding: 20px 28px;
+}
+
+.footer {
+  width: 347px;
+  display: flex;
+  flex-direction: column;
+}
+
+.privacy-links,
+.copyright-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-link {
+  font-family: "Segoe UI";
+  font-size: 16px;
+  line-height: 21px;
+  color: #536471;
+  text-decoration: none;
+}

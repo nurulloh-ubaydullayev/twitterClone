@@ -1,0 +1,63 @@
+.sidebar {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 268px;
+  margin-right: 15px;
+  padding: 31px 15px;
+}
+
+.twitter-logo {
+  margin-left: 15px;
+  margin-bottom: 49px;
+}
+
+.tweet-link {
+  display: inline-block;
+  // margin-bottom: 260px;
+  padding: 15px 90px;
+  font-family: "Segoe UI";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: #1d9bf0;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 27.5px;
+}
+
+.sidebar__user {
+  margin-bottom: 30px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.sidebar__user-img {
+  margin-right: 10px;
+}
+
+.user-info {
+  margin-right: 42px;
+}
+
+.sidebar__user-name {
+  font-family: "Segoe UI";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.sidebar__user-account {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+  opacity: 0.6;
+}

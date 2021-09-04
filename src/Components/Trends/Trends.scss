@@ -1,0 +1,33 @@
+.trends {
+  width: 373px;
+  margin-bottom: 20px;
+  padding: 20px 16px;
+  padding-bottom: 30px;
+  background-color: #f7f9f9;
+  border-radius: 10px;
+}
+
+.trends__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.trends__heading {
+  font-family: "Segoe UI";
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+}
+
+.trends__more-link {
+  display: inline-block;
+  margin-top: 15px;
+  font-family: "Segoe UI";
+  font-size: 18px;
+  line-height: 100%;
+  color: #1da1f2;
+  text-decoration: none;
+}

@@ -1,0 +1,41 @@
+.trend__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.trend-country {
+  margin-bottom: 2px;
+  font-family: "Segoe UI";
+  font-size: 16px;
+  line-height: 21px;
+  color: #393b41;
+  opacity: 0.6;
+}
+
+.trend__item-heading {
+  margin-bottom: 3px;
+  font-family: "Segoe UI";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #000000;
+}
+
+.trend__tweets-count {
+  font-family: "Segoe UI";
+  font-size: 16px;
+  line-height: 21px;
+  color: #393b41;
+  opacity: 0.6;
+}
+
+.trend__more-btn {
+  display: block;
+  padding: 10px;
+  margin-top: 3px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}

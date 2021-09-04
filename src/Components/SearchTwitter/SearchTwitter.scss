@@ -1,0 +1,30 @@
+.search-input {
+  width: 373px;
+  margin-bottom: 20px;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 64px;
+  padding-right: 10px;
+  background-color: #eff3f4;
+  border: none;
+  border-radius: 31px;
+  outline: none;
+  font-family: "Segoe UI";
+  font-size: 18px;
+  line-height: 24px;
+  color: #5c6c79;
+}
+
+.search__label {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(20px) translateY(-5px);
+  width: 24px;
+  height: 24px;
+}
