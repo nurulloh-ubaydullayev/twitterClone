@@ -2,7 +2,6 @@ import "./Sidebar.scss";
 import Twitter from "../Lib/Svg/Twitter-logo";
 import DotsIcon from "../Lib/Svg/dots";
 import UserImg from "../../Assets/Images/sidebar__user-img.png";
-
 import Nav from "../Navbar/Nav";
 
 function Sidebar() {
