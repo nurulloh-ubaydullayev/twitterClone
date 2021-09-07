@@ -1,4 +1,5 @@
 import "./OthersPost.scss";
+import React from "react";
 
 // Images
 import postAvatar from "../../Assets/Images/post-avatar1.png";
@@ -13,6 +14,20 @@ import User2Avatar from "../../Assets/Images/user2.png";
 import ShashlikImg from "../../Assets/Images/shashlik.jpg";
 
 function OthersPost() {
+  const likeBtn = React.useRef(false);
+  const [likeIconColor, setLikeColor] = React.useState("black");
+  function addLike() {
+    if (likeBtn.current === false) {
+      likeBtn.current = true;
+      setLikeColor("red");
+    } else {
+      likeBtn.current = false;
+      setLikeColor("black");
+    }
+    console.log(likeBtn.current);
+  }
+
+  React.useRef(() => {}, [likeIconColor]);
   return (
     <>
       <div className="others-post">
@@ -37,9 +52,11 @@ function OthersPost() {
               <RetweetIcon />
               <span className="retweets-count">1</span>
             </button>
-            <button className="post__about-btn">
-              <LikeIcon />
-              <span className="like-count">8</span>
+            <button className="post__about-btn" onClick={addLike}>
+              <LikeIcon likeColor={likeIconColor} />
+              <span className="like-count" ref={likeBtn}>
+                8
+              </span>
             </button>
             <button className="post__about-btn">
               <ShareIcon />
@@ -125,7 +142,7 @@ function OthersPost() {
               <span className="retweets-count">1</span>
             </button>
             <button className="post__about-btn">
-              <LikeIcon />
+              <LikeIcon likeColor={likeIconColor} />
               <span className="like-count">8</span>
             </button>
             <button className="post__about-btn">

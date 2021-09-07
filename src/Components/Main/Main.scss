@@ -23,6 +23,14 @@
   color: #000000;
 }
 
+.dark .header__heading {
+  color: #fff;
+}
+
 ::-webkit-scrollbar {
   display: none;
+}
+
+.dark .lang-icon path {
+  fill: #fff;
 }

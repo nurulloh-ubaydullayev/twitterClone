@@ -1,6 +1,7 @@
 function DotsIcon() {
   return (
     <svg
+      className="dots-icon"
       width="17"
       height="4"
       viewBox="0 0 17 4"

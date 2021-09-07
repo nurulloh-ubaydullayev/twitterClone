@@ -1,6 +1,7 @@
 function LikeFillIcon() {
   return (
     <svg
+      className="post__icon"
       width="24"
       height="24"
       viewBox="0 0 24 24"

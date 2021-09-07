@@ -22,6 +22,14 @@
   color: #000000;
 }
 
+.dark .nav__link {
+  color: #fff;
+}
+
+.dark .nav__item__icon path {
+  fill: #fff;
+}
+
 .nav__link-text {
   margin-left: 20px;
 }

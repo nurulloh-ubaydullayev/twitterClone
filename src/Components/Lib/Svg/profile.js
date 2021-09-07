@@ -1,6 +1,7 @@
 function ProfileIcon() {
   return (
     <svg
+      className="nav__item__icon"
       width="28"
       height="28"
       viewBox="0 0 24 24"

@@ -13,6 +13,7 @@ function Main() {
   function changeTheme() {
     setTheme(theme === "light" ? "dark" : "light");
   }
+
   return (
     <div className="main">
       <header className="header">

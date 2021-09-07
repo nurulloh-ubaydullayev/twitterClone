@@ -1,6 +1,7 @@
 function LangIcon() {
   return (
     <svg
+      className="lang-icon"
       width="22"
       height="22"
       viewBox="0 0 24 22"

@@ -25,6 +25,20 @@
   color: #000000;
 }
 
+.dark .post-owner__name,
+.dark .post-owner__account,
+.dark .post-text,
+.dark .commets-count,
+.dark .post__about-btn,
+.dark .retweets-count,
+.dark .like-count {
+  color: #fff;
+}
+
+.dark .post__icon path {
+  fill: #fff;
+}
+
 .post-text {
   margin-bottom: 22px;
   font-family: "Segoe UI";
