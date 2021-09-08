@@ -1,6 +1,7 @@
 .trends {
-  width: 373px;
-  margin-bottom: 20px;
+  width: 100%;
+  max-width: 373px;
+  margin-bottom: 16px;
   padding: 20px 16px;
   padding-bottom: 30px;
   background-color: #f7f9f9;
@@ -11,22 +12,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .trends__heading {
   font-family: "Segoe UI";
   font-weight: bold;
   font-size: 24px;
-  line-height: 32px;
+  line-height: 24px;
   color: #000000;
 }
 
 .trends__more-link {
   display: inline-block;
-  margin-top: 15px;
+  margin-top: 12px;
   font-family: "Segoe UI";
-  font-size: 18px;
+  font-size: 16px;
   line-height: 100%;
   color: #1da1f2;
   text-decoration: none;

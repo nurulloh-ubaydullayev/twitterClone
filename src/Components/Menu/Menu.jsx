@@ -1,11 +1,16 @@
 import "./Menu.scss";
+import useLang from "../../Hooks/useLang";
 
 // Components
 import SearchTwitter from "../SearchTwitter/SearchTwitter";
 import Trends from "../Trends/Trends";
 import YouLike from "../YouLike/YouLike";
 
+import Content from "../../Localization/Content";
+
 function Menu() {
+  const [lang] = useLang();
+
   return (
     <div className="menu">
       <SearchTwitter />
@@ -14,27 +19,27 @@ function Menu() {
       <footer className="footer">
         <div className="privacy-links">
           <a className="footer-link" href="index.html">
-            Terms of Service
+            {Content[lang].terms}
           </a>
           <a className="footer-link" href="index.html">
-            Privacy Policy
+            {Content[lang].policy}
           </a>
           <a className="footer-link" href="index.html">
-            Cookie Policy
+            {Content[lang].cookiePolicy}
           </a>
         </div>
         <div className="copyright-links">
           <a className="footer-link" href="index.html">
-            Imprint
+            {Content[lang].imprint}
           </a>
           <a className="footer-link" href="index.html">
-            Ads Info
+            {Content[lang].adsInfo}
           </a>
           <a className="footer-link" href="index.html">
-            More ···
+            Mo{Content[lang].menuMore}
           </a>
           <a className="footer-link" href="index.html">
-            © 2021 Twitter, Inc.
+            {Content[lang].coopywrite}
           </a>
         </div>
       </footer>

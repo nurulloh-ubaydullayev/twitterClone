@@ -1,9 +1,10 @@
 .search-input {
-  width: 373px;
-  margin-bottom: 20px;
+  width: 100%;
+  max-width: 373px;
+  margin-bottom: 16px;
 
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   padding-left: 64px;
   padding-right: 10px;
   background-color: #eff3f4;
@@ -11,8 +12,8 @@
   border-radius: 31px;
   outline: none;
   font-family: "Segoe UI";
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 20px;
   color: #5c6c79;
 }
 
@@ -24,7 +25,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateX(20px) translateY(-5px);
-  width: 24px;
-  height: 24px;
+  transform: translateX(20px) translateY(-4px);
+  width: 22px;
+  height: 22px;
 }

@@ -1,13 +1,17 @@
 import "./YouLike.scss";
+import Content from "../../Localization/Content";
+
+import useLang from "../../Hooks/useLang";
 
 // Images
 import MushtariyAvatar from "../../Assets/Images/Mushtariy-avatar.png";
 import ShuxratAvatar from "../../Assets/Images/Shuxrat-avatar.png";
 
 function YouLike() {
+  const [lang] = useLang();
   return (
     <div className="you-like">
-      <h3 className="you-like__heading">You might like</h3>
+      <h3 className="you-like__heading">{Content[lang].likeYou}</h3>
       <div className="you-like__item">
         <img
           className="you-like__item__avatar"
@@ -21,7 +25,7 @@ function YouLike() {
           <span className="you-like__account">@Mushtar565266</span>
         </div>
         <a className="you-like__follow-link" href="index.html">
-          Follow
+          {Content[lang].follow}
         </a>
       </div>
       <div className="you-like__item">
@@ -37,11 +41,11 @@ function YouLike() {
           <span className="you-like__account">@mrshukhrat</span>
         </div>
         <a className="you-like__follow-link" href="index.html">
-          Follow
+          {Content[lang].follow}
         </a>
       </div>
       <a className="you-like__more-link" href="index.html">
-        Show more
+        {Content[lang].trendsMore}
       </a>
     </div>
   );

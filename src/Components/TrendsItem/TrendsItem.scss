@@ -2,14 +2,14 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .trend-country {
   margin-bottom: 2px;
   font-family: "Segoe UI";
   font-size: 16px;
-  line-height: 21px;
+  line-height: 16px;
   color: #393b41;
   opacity: 0.6;
 }
@@ -19,14 +19,14 @@
   font-family: "Segoe UI";
   font-weight: 600;
   font-size: 20px;
-  line-height: 27px;
+  line-height: 18px;
   color: #000000;
 }
 
 .trend__tweets-count {
   font-family: "Segoe UI";
   font-size: 16px;
-  line-height: 21px;
+  line-height: 18px;
   color: #393b41;
   opacity: 0.6;
 }
@@ -34,7 +34,7 @@
 .trend__more-btn {
   display: block;
   padding: 10px;
-  margin-top: 3px;
+  margin-top: 2px;
   border: none;
   background-color: transparent;
   cursor: pointer;
