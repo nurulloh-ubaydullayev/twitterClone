@@ -1,4 +1,4 @@
-import Recat from "react";
+import React from "react";
 import { Route, Redirect, useLocation } from "react-router-dom";
 import useToken from "../Hooks/useToken";
 

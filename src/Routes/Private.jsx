@@ -1,10 +1,10 @@
-import Recat from "react";
-import { Route, Redirect, useLocation } from "react-router-dom";
+import React from "react";
+import { Route, Redirect } from "react-router-dom";
 import useToken from "../Hooks/useToken";
 
 function Private(props) {
   const [token] = useToken();
-  const { pathname } = useLocation();
+  // const { pathname } = useLocation();
   if (token) return <Route {...props} />;
   return <Redirect to="/login" />;
 }
