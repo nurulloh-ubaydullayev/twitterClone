@@ -1,5 +1,7 @@
 import "./OthersPost.scss";
 import React from "react";
+import { data } from "../Storage/data";
+import Tweet from "../Tweet/Tweet";
 
 // Images
 import postAvatar from "../../Assets/Images/post-avatar1.png";
@@ -19,8 +21,55 @@ function OthersPost() {
 
   React.useRef(() => {}, [likeIconColor]);
   return (
-    <>
-      <div className="others-post">
+    <ul>
+      {data &&
+        data.map((row) => (
+          <Tweet key={row.id}>
+            {
+              <>
+                <img className="post-avatar" src={postAvatar} alt="Post user" />
+                <div className="post">
+                  <div className="post-owner">
+                    <h3 className="post-owner__name">Designsta</h3>
+                    <span className="post-owner__account">
+                      @inner · <span className="creation-time">25m</span>
+                    </span>
+                  </div>
+                  <div className="post-text">{row.content}</div>
+                  <div className="post__buttons">
+                    <button className="post__about-btn">
+                      <CommentIcon />
+                      <span className="commets-count">10</span>
+                    </button>
+                    <button className="post__about-btn">
+                      <RetweetIcon />
+                      <span className="retweets-count">1</span>
+                    </button>
+                    <button
+                      className="post__about-btn"
+                      onClick={() => setLikeColor(!likeIconColor)}
+                    >
+                      <LikeIcon likeColor={likeIconColor} />
+                      <span className="like-count">8</span>
+                    </button>
+                    <button className="post__about-btn">
+                      <ShareIcon />
+                    </button>
+                    <button className="post__about-btn">
+                      <StatisticsIcon />
+                    </button>
+                  </div>
+                </div>
+
+                <button className="posts__more-btn">
+                  <img src={MoreImg} alt="more button" />
+                </button>
+              </>
+            }
+          </Tweet>
+        ))}
+
+      <li className="others-post">
         <img className="post-avatar" src={postAvatar} alt="Post user" />
         <div className="post">
           <div className="post-owner">
@@ -61,9 +110,9 @@ function OthersPost() {
         <button className="posts__more-btn">
           <img src={MoreImg} alt="more button" />
         </button>
-      </div>
+      </li>
 
-      <div className="others-post">
+      <li className="others-post">
         <img className="post-avatar" src={User2Avatar} alt="Post user" />
         <div className="post">
           <div className="post-owner">
@@ -102,9 +151,9 @@ function OthersPost() {
         <button className="posts__more-btn">
           <img src={MoreImg} alt="more button" />
         </button>
-      </div>
+      </li>
 
-      <div className="others-post">
+      <li className="others-post">
         <img className="post-avatar" src={postAvatar} alt="Post user" />
         <div className="post">
           <div className="post-owner">
@@ -148,8 +197,8 @@ function OthersPost() {
         <button className="posts__more-btn">
           <img src={MoreImg} alt="more button" />
         </button>
-      </div>
-    </>
+      </li>
+    </ul>
   );
 }
 

@@ -9,58 +9,59 @@ import BookmarksIcon from "../Lib/Svg/bookmarks";
 import ListIcon from "../Lib/Svg/lists";
 import ProfileIcon from "../Lib/Svg/profile";
 import MoreIcon from "../Lib/Svg/more";
+import { NavLink } from "react-router-dom";
 
 function Nav({ lang, content }) {
   return (
     <nav className="nav">
       <ul className="nav__list">
         <li className="nav__item">
-          <a className="nav__link" href="index.html">
+          <NavLink className="nav__link" to="/">
             <HomeIcon />
             <p className="nav__link-text">{content[lang].home}</p>
-          </a>
+          </NavLink>
         </li>
         <li className="nav__item">
-          <a className="nav__link" href="index.html">
+          <NavLink className="nav__link" to="/explore">
             <ExploreIcon />
             <p className="nav__link-text">{content[lang].explore}</p>
-          </a>
+          </NavLink>
         </li>
         <li className="nav__item">
-          <a className="nav__link" href="index.html">
+          <NavLink className="nav__link" to="/notifications">
             <NotsIcon />
             <p className="nav__link-text">{content[lang].notification}</p>
-          </a>
+          </NavLink>
         </li>
         <li className="nav__item">
-          <a className="nav__link" href="index.html">
+          <NavLink className="nav__link" to="/messages">
             <MessagesIcon />
             <p className="nav__link-text">{content[lang].messages}</p>
-          </a>
+          </NavLink>
         </li>
         <li className="nav__item">
-          <a className="nav__link" href="index.html">
+          <NavLink className="nav__link" to="/bookmarks">
             <BookmarksIcon />
             <p className="nav__link-text">{content[lang].bookmarks}</p>
-          </a>
+          </NavLink>
         </li>
         <li className="nav__item">
-          <a className="nav__link" href="index.html">
+          <NavLink className="nav__link" to="/lists">
             <ListIcon />
             <p className="nav__link-text">{content[lang].lists}</p>
-          </a>
+          </NavLink>
         </li>
         <li className="nav__item">
-          <a className="nav__link" href="index.html">
+          <NavLink className="nav__link" to="/profile">
             <ProfileIcon />
             <p className="nav__link-text">{content[lang].profile}</p>
-          </a>
+          </NavLink>
         </li>
         <li className="nav__item">
-          <a className="nav__link" href="index.html">
+          <NavLink className="nav__link" to="/more">
             <MoreIcon />
             <p className="nav__link-text">{content[lang].more}</p>
-          </a>
+          </NavLink>
         </li>
       </ul>
     </nav>

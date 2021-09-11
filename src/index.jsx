@@ -3,14 +3,21 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import { Provider as ThemeProvider } from "./Context/Theme";
 import { LangProvider } from "./Context/Language";
+import { Provider as TokenProvider } from "./Context/Authentication";
+
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    <LangProvider>
-      <ThemeProvider>
-        <App />
-      </ThemeProvider>
-    </LangProvider>
+    <BrowserRouter>
+      <TokenProvider>
+        <LangProvider>
+          <ThemeProvider>
+            <App />
+          </ThemeProvider>
+        </LangProvider>
+      </TokenProvider>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );

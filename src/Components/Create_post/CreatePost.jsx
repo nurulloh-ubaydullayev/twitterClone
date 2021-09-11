@@ -1,6 +1,10 @@
 import React from "react";
 import "./CreatePost.scss";
 
+import Content from "../../Localization/Content";
+
+import useLang from "../../Hooks/useLang";
+
 // Images
 import OwnerAvatar from "../../Assets/Images/sidebar__user-img.png";
 import ImageIcon from "../Lib/Svg/image";
@@ -10,6 +14,7 @@ import SmileIcon from "../Lib/Svg/smile";
 import ScheduleIcon from "../Lib/Svg/schedule";
 
 function CreatePost() {
+  const [lang] = useLang();
   return (
     <div className="post__owner">
       <img
@@ -22,7 +27,7 @@ function CreatePost() {
           <input
             className="create__form-text"
             type="text"
-            placeholder="What’s happening"
+            placeholder={Content[lang].heppening}
           />
           <div className="form-bottom">
             <div className="form__attach-media">

@@ -1,18 +1,20 @@
 import "./Main.scss";
 import React from "react";
+import { NavLink } from "react-router-dom";
 import useTheme from "../../Hooks/useTheme";
 import useLang from "../../Hooks/useLang";
+import useToken from "../../Hooks/useToken";
 
-import LangIcon from "../Lib/Svg/lang";
+import LangIcon from "../../Components/Lib/Svg/lang";
 import Content from "../../Localization/Content";
 
 //Components
-import Posts from "../Posts/Posts";
+import Posts from "../../Components/Posts/Posts";
 
 function Main() {
   const [theme, setTheme] = useTheme();
   const [lang, setLang] = useLang();
-  console.log(lang);
+  const [token] = useToken();
 
   function changeTheme() {
     setTheme(theme === "light" ? "dark" : "light");
@@ -32,6 +34,9 @@ function Main() {
           <option value="ru">ru</option>
           <option value="uz">uz</option>
         </select>
+
+        {!token && <NavLink to="/login">Login</NavLink>}
+
         <div onClick={changeTheme}>
           <LangIcon />
         </div>
