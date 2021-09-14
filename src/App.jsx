@@ -27,7 +27,7 @@ function App() {
         <Switch>
           <Public path="/" component={Main} exact />
           <Public path="/login" component={Login} exact />
-          <Private path="/profile" component={Profile} exact />
+          <Private path="/profile/tweets" component={Profile} />
         </Switch>
         {/* <Main /> */}
         <Menu />

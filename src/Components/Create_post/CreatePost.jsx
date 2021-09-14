@@ -4,6 +4,7 @@ import "./CreatePost.scss";
 import Content from "../../Localization/Content";
 
 import useLang from "../../Hooks/useLang";
+import useTweets from "../../Hooks/useTweets";
 
 // Images
 import OwnerAvatar from "../../Assets/Images/sidebar__user-img.png";
@@ -14,6 +15,20 @@ import SmileIcon from "../Lib/Svg/smile";
 import ScheduleIcon from "../Lib/Svg/schedule";
 
 function CreatePost() {
+  const [tweets, setTweets] = useTweets();
+
+  function handleFormSubmit(evt) {
+    evt.preventDefault();
+    const [input] = evt.target.elements;
+    setTweets([
+      { id: tweets.length, userName: "John Doe", content: input.value },
+      ...tweets,
+    ]);
+    input.value = null;
+  }
+
+  React.useEffect(() => {}, [tweets]);
+
   const [lang] = useLang();
   return (
     <div className="post__owner">
@@ -23,7 +38,7 @@ function CreatePost() {
         alt="Owner avatar"
       />
       <div className="post__content">
-        <form className="create__post-form">
+        <form className="create__post-form" onSubmit={handleFormSubmit}>
           <input
             className="create__form-text"
             type="text"

@@ -52,7 +52,7 @@ function Nav({ lang, content }) {
           </NavLink>
         </li>
         <li className="nav__item">
-          <NavLink className="nav__link" to="/profile">
+          <NavLink className="nav__link" to="/profile/tweets">
             <ProfileIcon />
             <p className="nav__link-text">{content[lang].profile}</p>
           </NavLink>

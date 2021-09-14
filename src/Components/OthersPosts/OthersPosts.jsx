@@ -1,7 +1,8 @@
 import "./OthersPost.scss";
 import React from "react";
-import { data } from "../Storage/data";
+// import { data } from "../Storage/data";
 import Tweet from "../Tweet/Tweet";
+import useTweets from "../../Hooks/useTweets";
 
 // Images
 import postAvatar from "../../Assets/Images/post-avatar1.png";
@@ -16,21 +17,21 @@ import User2Avatar from "../../Assets/Images/user2.png";
 import ShashlikImg from "../../Assets/Images/shashlik.jpg";
 
 function OthersPost() {
+  const [tweets] = useTweets();
   // const likeBtn = React.useRef("");
   const [likeIconColor, setLikeColor] = React.useState(false);
-
-  React.useRef(() => {}, [likeIconColor]);
+  React.useEffect(() => {}, [tweets]);
   return (
     <ul>
-      {data &&
-        data.map((row) => (
+      {tweets &&
+        tweets.map((row) => (
           <Tweet key={row.id}>
             {
               <>
                 <img className="post-avatar" src={postAvatar} alt="Post user" />
                 <div className="post">
                   <div className="post-owner">
-                    <h3 className="post-owner__name">Designsta</h3>
+                    <h3 className="post-owner__name">{row.userName}</h3>
                     <span className="post-owner__account">
                       @inner · <span className="creation-time">25m</span>
                     </span>
