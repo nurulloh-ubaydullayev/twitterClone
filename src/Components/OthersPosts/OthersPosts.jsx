@@ -5,6 +5,7 @@ import Tweet from "../Tweet/Tweet";
 import useTweets from "../../Hooks/useTweets";
 
 // Images
+import OwnerAvatar from "../../Assets/Images/sidebar__user-img.png";
 import postAvatar from "../../Assets/Images/post-avatar1.png";
 import CommentIcon from "../Lib/Svg/comment";
 import RetweetIcon from "../Lib/Svg/retweet";
@@ -28,10 +29,14 @@ function OthersPost() {
           <Tweet key={row.id}>
             {
               <>
-                <img className="post-avatar" src={postAvatar} alt="Post user" />
+                <img
+                  className="post-avatar"
+                  src={OwnerAvatar}
+                  alt="Post user"
+                />
                 <div className="post">
                   <div className="post-owner">
-                    <h3 className="post-owner__name">{row.userName}</h3>
+                    <h3 className="post-owner__name">Bobur</h3>
                     <span className="post-owner__account">
                       @inner · <span className="creation-time">25m</span>
                     </span>
